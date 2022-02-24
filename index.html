@@ -18,30 +18,34 @@
     <header class="header">
       <div class="unit-entry-container">
         <h1>Metric/Imperial Unit Conversion</h1>
-        <p class="unit-val">0</p>
+        <p id="unit-entry-val">0</p>
+        <button id="calculate-btn">Calculate</button>
       </div>
     </header>
 
     <main>
       <div class="results-container">
+
         <div class="length-container">
           <h2>Length (Meters/Feet)</h2>
-          <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
+          <p><span class="metric-initial">0</span> meters = <span id="feet-results">0.000</span> feet | <span class="imp-initial">0</span> feet = <span id="meter-results">0.000</span> meters</p>
         </div>
+
         <div class="volume-container">
           <h2>Volume (Liters/Gallons)</h2>
-          <p>0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+          <p><span class="metric-initial">0</span> liters = <span id="gallon-results">0.000</span> gallons | <span class="imp-initial">0</span> gallons = <span id="liter-results">0.000</span> liters</p>
         </div>
+
         <div class="mass-container">
           <h2>Mass (Kilograms/Pounds)</h2>
-          <p>0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+          <p><span class="metric-initial">0</span> kilos = <span id="pound-results">0.000</span> pounds | <span class="imp-initial">0</span> pounds = <span id="kilo-results">0.000</span> kilos</p>
         </div>
+
       </div>
     </main>
-    
+
   </div>
   
-
   <!-- JavaScript -->
   <script src="app.js"></script>
 </body>
